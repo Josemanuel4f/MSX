@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Ejemplo 2 - Artículos{% endblock %}
+{% block content %}
+<div class="posts">
+    <h1 class="content-subhead">MSX</h1>
+
+    <!-- A single blog post -->
+    <section class="post">
+        <header class="post-header">
+            
+
+            <h2 class="post-title">Lista de juegos</h2>
+
+            <p class="post-meta">
+                By <a href="#" class="post-author">José Manuel</a> under <a class="post-category post-category-design" href="#">Python</a> <a class="post-category post-category-pure" href="#">Flask</a>
+            </p>
+            <p></p>
+        </header>
+
+        <body>
+            <form action="/listajuegos" method="POST">
+              <label for="busqueda">Buscar juego:</label>
+              <input type="text" id="busqueda" name="busqueda">
+              <button type="submit">Buscar</button>
+            </form>
+          </body>
+    </section>
+</div>
+{% endblock %}
